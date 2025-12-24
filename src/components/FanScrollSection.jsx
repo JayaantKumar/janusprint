@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import TextReveal from './TextReveal'; // <--- Import
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,8 +43,15 @@ const FanScrollSection = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="h-screen w-full bg-black flex flex-col items-center justify-center z-10">
-      <h2 className="text-4xl font-bold mb-20 text-white z-20">Our Services</h2>
+    <div ref={containerRef} className="h-screen w-full bg-black flex flex-col items-center justify-center z-10 overflow-hidden">
+      
+      {/* Animated Title */}
+      <div className="mb-20 z-20">
+          <TextReveal>
+             <h2 className="text-4xl md:text-6xl font-bold text-white text-center">Our Services</h2>
+             <p className="text-white/50 text-center mt-4">Scroll to explore</p>
+          </TextReveal>
+      </div>
       
       <div className="relative w-64 h-96">
         {images.map((src, i) => (
@@ -54,7 +62,7 @@ const FanScrollSection = () => {
             style={{ zIndex: 4 - i }}
           >
             <img src={src} className="w-full h-full object-cover" alt="" />
-            <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+            <div className="absolute bottom-0 left-0 w-full p-4 bg-linear-to-t from-black/80 to-transparent">
               <span className="text-white font-mono">0{i+1}</span>
             </div>
           </div>
