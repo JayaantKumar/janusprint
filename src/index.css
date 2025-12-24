@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Optional: Keep your global styles */
+body {
+  background-color: black;
+  color: white;
+}
