@@ -2,11 +2,11 @@ import React from 'react';
 import TextReveal from './TextReveal'; // <--- Import
 
 const items = [
-    { url: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&q=80", label: "URBAN" },
-    { url: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=800&q=80", label: "NIKE" },
-    { url: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&q=80", label: "ADIDAS" },
-    { url: "https://images.unsplash.com/photo-1560769629-975e13f0c470?w=800&q=80", label: "PUMA" },
-    { url: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&q=80", label: "VOGUE" },
+    { url: "https://5.imimg.com/data5/SELLER/Default/2022/8/AN/PH/YE/15303877/4.webp", label: "URBAN" },
+    { url: "https://industry.packaging-labelling.com/articles/1734584753-packaging.png", label: "NIKE" },
+    { url: "https://i0.wp.com/1.bp.blogspot.com/-VQmKI98vfVA/XcEEfEP0wGI/AAAAAAAGTlk/ul4qpT74eW00tZmD_sgaPiIs_FDF9nLFwCLcBGAsYHQ/s1600/My-Project-02.jpg?ssl=1", label: "ADIDAS" },
+    { url: "https://image.commarts.com/images1/9/5/1/1/115964_101_350_LTk1NTMwNDIwOS0xOTUzMzk5Njg0.jpg", label: "PUMA" },
+    { url: "https://a.storyblok.com/f/102007/768x432/94c9316db2/sustainable-packaging-paper-eco-friendly-disposable-tableware-plates-cups-bowls-recycling-signs.jpg/m/filters:quality(90)", label: "VOGUE" },
 ];
 
 const SlantedMarquee = () => {

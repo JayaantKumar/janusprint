@@ -9,7 +9,7 @@ const images = [
     "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600",
     "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?w=600",
     "https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?w=600",
-    "https://images.unsplash.com/photo-1532323544230-7191fd510c59?w=600",
+    "https://i.pinimg.com/1200x/31/c2/04/31c20422fdc9db2e882b8c24fd7cecca.jpg",
 ];
 
 const FanScrollSection = () => {
